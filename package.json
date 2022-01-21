@@ -1,0 +1,20 @@
+{
+  "name": "nft-preview-card-component",
+  "version": "1.0.0",
+  "description": "This is a solution to the NFT preview card component on Frontend Mentor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "start": "sass --watch sass/styles.scss styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimMartin13/nft-preview-card-component.git"
+  },
+  "author": "Tim Martin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TimMartin13/nft-preview-card-component/issues"
+  },
+  "homepage": "https://github.com/TimMartin13/nft-preview-card-component#readme"
+}

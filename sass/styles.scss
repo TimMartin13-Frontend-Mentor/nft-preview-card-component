@@ -1,0 +1,126 @@
+// Primary colors
+$clr-soft-blue: hsl(215, 51%, 70%);
+$clr-cyan: hsl(178, 100%, 50%);
+
+// Neutral colors
+$clr-dk-blue-main: hsl(217, 54%, 11%);
+$clr-dk-blue-card: hsl(216, 50%, 16%);
+$clr-dk-blue-line: hsl(215, 32%, 27%);
+$clr-white: hsl(0, 0%, 100%);
+
+// Font weights
+$fnt-wt-light: 300;
+$fnt-wt-regular: 400;
+$fnt-wt-semi-bold: 600;
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  font-size: 21px;
+}
+
+body {
+  background-color: $clr-dk-blue-main;
+}
+
+.card {
+  background-color: $clr-dk-blue-card;
+  margin: 0 auto;
+  width: 325px;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.card__container {
+  margin: 1.5rem;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+
+  .card__img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .card__title {
+    color: $clr-white;
+    font-weight: $fnt-wt-semi-bold;
+    padding-top: 1.25rem;
+  }
+
+  .card__desc {
+    color: $clr-soft-blue;
+    font-weight: $fnt-wt-light;
+    font-size: 0.73rem;
+    line-height: 1.25rem
+  }
+
+  .card__cost-time {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid $clr-dk-blue-line;
+
+    .cost-time-section {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+
+      img {
+        padding-top: 0.1rem;
+        height: 90%;
+        padding-right: 0.3rem;
+      }
+
+      .cost__txt {
+        font-size: 0.70rem;
+        color: $clr-cyan;
+        font-weight: $fnt-wt-regular;
+      }
+
+      .time__txt {
+        font-size: 0.70rem;
+        color: $clr-soft-blue;
+        font-weight: $fnt-wt-light;
+      }
+    }
+  }
+
+  .card__creator {
+    display: flex;
+    flex-direction: row;
+    // .avatar {
+    //   border: 1px solid $clr-white;
+    // }
+    img {
+      height: 30px;
+      border: 1px solid $clr-white;
+      border-radius: 50%;
+      margin-top: 1rem;
+    }
+
+    h5 {
+      font-size: 0.70rem;
+      color: $clr-soft-blue;
+      font-weight: $fnt-wt-light;
+    }
+
+    span {
+      font-size: 0.70rem;
+      color: $clr-white;
+      font-weight: $fnt-wt-light;
+    }
+
+  }
+}
+
+.padding-bottom {
+  padding-bottom: 0.75rem;
+}
+
+.flex-right {
+  justify-content: right;
+}
+
