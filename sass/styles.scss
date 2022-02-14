@@ -27,21 +27,59 @@ body {
 
 .card {
   background-color: $clr-dk-blue-card;
-  margin: 0 auto;
+  margin: 60px auto;
   width: 325px;
   height: auto;
   border-radius: 0.5rem;
 }
 
 .card__container {
-  margin: 1.5rem;
-  padding: 1.5rem 0;
+  position: relative;
+  margin: 1rem;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
 
-  .card__img {
-    width: 100%;
+  .image__container{
     border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    
+    .card-link {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        content: url("../../images/icon-view.svg");
+        width: 100%;
+        height: 100%;
+        background-color: hsl(178, 100%, 50%, 0.4);
+        transition: all 0.3s ease-in;
+        opacity: 0;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+      .card__img {
+        width: 100%;
+      }
+    }
+  }
+
+  .text-highlight {
+    text-decoration: none;
+
+    &:hover {
+      color: $clr-cyan;
+    }
   }
 
   .card__title {
@@ -91,23 +129,23 @@ body {
   .card__creator {
     display: flex;
     flex-direction: row;
-    // .avatar {
-    //   border: 1px solid $clr-white;
-    // }
-    img {
+    
+    .avatar {
       height: 30px;
       border: 1px solid $clr-white;
       border-radius: 50%;
-      margin-top: 1rem;
+      margin-top: 0.75rem;
+      margin-right: 1rem;
     }
 
     h5 {
       font-size: 0.70rem;
       color: $clr-soft-blue;
       font-weight: $fnt-wt-light;
+      padding-top: 1rem;
     }
 
-    span {
+    a {
       font-size: 0.70rem;
       color: $clr-white;
       font-weight: $fnt-wt-light;
@@ -124,3 +162,21 @@ body {
   justify-content: right;
 }
 
+.attribution {
+  color: $clr-white;
+
+  a {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  *, *::before, *::after {
+    font-size: 24px;
+  }
+  .card {
+    margin: 60px auto;
+    width: 350px;
+    height: auto;
+  }
+}

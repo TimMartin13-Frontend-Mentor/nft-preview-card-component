@@ -12,21 +12,53 @@ body {
 
 .card {
   background-color: #14253d;
-  margin: 0 auto;
+  margin: 60px auto;
   width: 325px;
   height: auto;
   border-radius: 0.5rem;
 }
 
 .card__container {
-  margin: 1.5rem;
-  padding: 1.5rem 0;
+  position: relative;
+  margin: 1rem;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
 }
-.card__container .card__img {
-  width: 100%;
+.card__container .image__container {
   border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.card__container .image__container .card-link {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__container .image__container .card-link::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: url("../../images/icon-view.svg");
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 247, 0.4);
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+.card__container .image__container .card-link:hover::before {
+  opacity: 1;
+}
+.card__container .image__container .card-link .card__img {
+  width: 100%;
+}
+.card__container .text-highlight {
+  text-decoration: none;
+}
+.card__container .text-highlight:hover {
+  color: #00fff7;
 }
 .card__container .card__title {
   color: white;
@@ -69,18 +101,20 @@ body {
   display: flex;
   flex-direction: row;
 }
-.card__container .card__creator img {
+.card__container .card__creator .avatar {
   height: 30px;
   border: 1px solid white;
   border-radius: 50%;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
+  margin-right: 1rem;
 }
 .card__container .card__creator h5 {
   font-size: 0.7rem;
   color: #8bacda;
   font-weight: 300;
+  padding-top: 1rem;
 }
-.card__container .card__creator span {
+.card__container .card__creator a {
   font-size: 0.7rem;
   color: white;
   font-weight: 300;
@@ -92,6 +126,25 @@ body {
 
 .flex-right {
   justify-content: right;
+}
+
+.attribution {
+  color: white;
+}
+.attribution a {
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 375px) {
+  *, *::before, *::after {
+    font-size: 24px;
+  }
+
+  .card {
+    margin: 60px auto;
+    width: 350px;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
