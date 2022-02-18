@@ -138,7 +138,7 @@ body {
       margin-right: 1rem;
     }
 
-    h5 {
+    h2 {
       font-size: 0.70rem;
       color: $clr-soft-blue;
       font-weight: $fnt-wt-light;
@@ -164,9 +164,15 @@ body {
 
 .attribution {
   color: $clr-white;
+  text-align: center;
+
+  h2 {
+    font-size: 0.6rem;
+  }
 
   a {
-    font-size: 0.75rem;
+    font-size: 0.6rem;
+    color: hsl(228, 45%, 44%);
   }
 }
 

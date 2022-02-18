@@ -108,7 +108,7 @@ body {
   margin-top: 0.75rem;
   margin-right: 1rem;
 }
-.card__container .card__creator h5 {
+.card__container .card__creator h2 {
   font-size: 0.7rem;
   color: #8bacda;
   font-weight: 300;
@@ -130,9 +130,14 @@ body {
 
 .attribution {
   color: white;
+  text-align: center;
+}
+.attribution h2 {
+  font-size: 0.6rem;
 }
 .attribution a {
-  font-size: 0.75rem;
+  font-size: 0.6rem;
+  color: #3e52a3;
 }
 
 @media screen and (min-width: 375px) {
