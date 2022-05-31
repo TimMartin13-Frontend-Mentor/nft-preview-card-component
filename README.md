@@ -30,7 +30,7 @@ This is a solution to the [NFT component challenge on Frontend Mentor](https://w
 ### Links
 
 - Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/nft-card-sass-8RvU_WzY4)
-- Live Site URL: [Github pages](https://timmartin13.github.io/nft-preview-card-component/)
+- Live Site URL: [Github pages](https://timmartin13-frontend-mentor.github.io/nft-preview-card-component/)
 
 ## My process
 
